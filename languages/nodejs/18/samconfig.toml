@@ -1,0 +1,9 @@
+version = 0.1
+[default.deploy.parameters]
+stack_name = "sam-app"
+resolve_s3 = true
+s3_prefix = "sam-app"
+region = "eu-west-1"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "AppBucketName=\"app-bucket\""
+image_repositories = ["HelloWorld1Function=770708881166.dkr.ecr.eu-west-1.amazonaws.com/samapp7427b055/helloworld1function322ad89frepo"]
